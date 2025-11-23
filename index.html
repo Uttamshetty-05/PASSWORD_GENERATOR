@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Random Password Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="card">
+    <h1>Random Password Generator</h1>
+
+    <label>
+      Length:
+      <input id="length" type="number" min="4" max="128" value="12" />
+    </label>
+
+    <div class="options">
+      <label><input id="upper" type="checkbox" checked /> Uppercase (A–Z)</label>
+      <label><input id="lower" type="checkbox" checked /> Lowercase (a–z)</label>
+      <label><input id="numbers" type="checkbox" checked /> Numbers (0–9)</label>
+      <label><input id="symbols" type="checkbox" checked /> Symbols (!@#...)</label>
+    </div>
+
+    <div class="controls">
+      <button id="generate">Generate</button>
+      <button id="copy">Copy</button>
+    </div>
+
+    <textarea id="result" readonly rows="2"></textarea>
+    <p id="note" class="note">Tip: include at least one character set.</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
